@@ -2,10 +2,10 @@ package localcache
 
 import (
 	"context"
-	"github.com/zhashkevych/go-clean-architecture/models"
+	"rehatcher/openidp/server/models"
 	"sync"
 
-	"github.com/zhashkevych/go-clean-architecture/bookmark"
+	"rehatcher/openidp/server/bookmark"
 )
 
 type BookmarkLocalStorage struct {

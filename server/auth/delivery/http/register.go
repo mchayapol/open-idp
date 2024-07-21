@@ -1,8 +1,9 @@
 package http
 
 import (
+	"rehatcher/openidp/server/auth"
+
 	"github.com/gin-gonic/gin"
-	"github.com/zhashkevych/go-clean-architecture/auth"
 )
 
 func RegisterHTTPEndpoints(router *gin.Engine, uc auth.UseCase) {

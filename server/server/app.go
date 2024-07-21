@@ -13,15 +13,15 @@ import (
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 
-	"github.com/zhashkevych/go-clean-architecture/auth"
-	"github.com/zhashkevych/go-clean-architecture/bookmark"
+	"rehatcher/openidp/server/auth"
+	"rehatcher/openidp/server/bookmark"
 
-	authhttp "github.com/zhashkevych/go-clean-architecture/auth/delivery/http"
-	authmongo "github.com/zhashkevych/go-clean-architecture/auth/repository/mongo"
-	authusecase "github.com/zhashkevych/go-clean-architecture/auth/usecase"
-	bmhttp "github.com/zhashkevych/go-clean-architecture/bookmark/delivery/http"
-	bmmongo "github.com/zhashkevych/go-clean-architecture/bookmark/repository/mongo"
-	bmusecase "github.com/zhashkevych/go-clean-architecture/bookmark/usecase"
+	authhttp "rehatcher/openidp/server/auth/delivery/http"
+	authmongo "rehatcher/openidp/server/auth/repository/mongo"
+	authusecase "rehatcher/openidp/server/auth/usecase"
+	bmhttp "rehatcher/openidp/server/bookmark/delivery/http"
+	bmmongo "rehatcher/openidp/server/bookmark/repository/mongo"
+	bmusecase "rehatcher/openidp/server/bookmark/usecase"
 )
 
 type App struct {

@@ -3,9 +3,10 @@ package main
 import (
 	"log"
 
+	"rehatcher/openidp/server/config"
+	"rehatcher/openidp/server/server"
+
 	"github.com/spf13/viper"
-	"github.com/zhashkevych/go-clean-architecture/config"
-	"github.com/zhashkevych/go-clean-architecture/server"
 )
 
 func main() {

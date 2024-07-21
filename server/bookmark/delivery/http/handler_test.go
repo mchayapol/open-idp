@@ -3,14 +3,15 @@ package http
 import (
 	"bytes"
 	"encoding/json"
-	"github.com/gin-gonic/gin"
-	"github.com/stretchr/testify/assert"
-	"github.com/zhashkevych/go-clean-architecture/auth"
-	"github.com/zhashkevych/go-clean-architecture/bookmark/usecase"
-	"github.com/zhashkevych/go-clean-architecture/models"
 	"net/http"
 	"net/http/httptest"
+	"rehatcher/openidp/server/auth"
+	"rehatcher/openidp/server/bookmark/usecase"
+	"rehatcher/openidp/server/models"
 	"testing"
+
+	"github.com/gin-gonic/gin"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestCreate(t *testing.T) {

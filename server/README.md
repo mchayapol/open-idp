@@ -64,7 +64,7 @@ Creates new bookmark
 ##### Example Input: 
 ```
 {
-	"url": "https://github.com/zhashkevych/go-clean-architecture",
+	"url": "https://rehatcher/openidp/server",
 	"title": "Go Clean Architecture example"
 } 
 ```
@@ -79,7 +79,7 @@ Returns all user bookmarks
 	"bookmarks": [
             {
                 "id": "5da2d8aae9b63715ddfae856",
-                "url": "https://github.com/zhashkevych/go-clean-architecture",
+                "url": "https://rehatcher/openidp/server",
                 "title": "Go Clean Architecture example"
             }
     ]
@@ -125,6 +125,19 @@ docker-compose -f mongo-compose.yml up -d
 go run cmd/api/main.go
 ```
 
+## Run Automated Tests
+1. Change to the directory containing the test
+2. ```
+go test -v handler_test.go handler.go register.go
+```
+
+or just
+```
+go test -cover
+```
+or
+Visualize coverage in VSCode by running `Go: Test Coverage in Current Package.`
+
 ## Run Manual Tests
 1. Sign up
 ```
@@ -141,7 +154,7 @@ and obtain token
 
 4. Create a bookmark
 ```
-curl -v -X POST -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjE1NDQ2OTguNTc3OTc1LCJ1c2VyIjp7IklEIjoiNjY5YjVlMTQ5MGQ1ZTYxZTAxZmQxNmY1IiwiVXNlcm5hbWUiOiJtY2hheWFwb2wiLCJQYXNzd29yZCI6ImQwNWY0OTg5YjdkYzc1MTdhOWE2MTVkNDQ0ZmZjOGNmNDZhOTU5NTgifX0.-VQRoMqVb-KFJdyQKDgXhpxUh42fpCEE5SjkLKndzV0" -d '{"url": "https://github.com/zhashkevych/go-clean-architecture","title": "Go Clean Architecture example"}' localhost:8000/api/bookmarks
+curl -v -X POST -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjE1NDQ2OTguNTc3OTc1LCJ1c2VyIjp7IklEIjoiNjY5YjVlMTQ5MGQ1ZTYxZTAxZmQxNmY1IiwiVXNlcm5hbWUiOiJtY2hheWFwb2wiLCJQYXNzd29yZCI6ImQwNWY0OTg5YjdkYzc1MTdhOWE2MTVkNDQ0ZmZjOGNmNDZhOTU5NTgifX0.-VQRoMqVb-KFJdyQKDgXhpxUh42fpCEE5SjkLKndzV0" -d '{"url": "https://rehatcher/openidp/server","title": "Go Clean Architecture example"}' localhost:8000/api/bookmarks
 ```
 
 5. Get all bookmarks

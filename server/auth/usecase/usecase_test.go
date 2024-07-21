@@ -2,10 +2,11 @@ package usecase
 
 import (
 	"context"
-	"github.com/stretchr/testify/assert"
-	"github.com/zhashkevych/go-clean-architecture/auth/repository/mock"
-	"github.com/zhashkevych/go-clean-architecture/models"
+	"rehatcher/openidp/server/auth/repository/mock"
+	"rehatcher/openidp/server/models"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestAuthFlow(t *testing.T) {

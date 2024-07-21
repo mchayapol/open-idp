@@ -1,8 +1,9 @@
 package http
 
 import (
+	"rehatcher/openidp/server/bookmark"
+
 	"github.com/gin-gonic/gin"
-	"github.com/zhashkevych/go-clean-architecture/bookmark"
 )
 
 func RegisterHTTPEndpoints(router *gin.RouterGroup, uc bookmark.UseCase) {

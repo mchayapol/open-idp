@@ -2,8 +2,9 @@ package usecase
 
 import (
 	"context"
+	"rehatcher/openidp/server/models"
+
 	"github.com/stretchr/testify/mock"
-	"github.com/zhashkevych/go-clean-architecture/models"
 )
 
 type BookmarkUseCaseMock struct {

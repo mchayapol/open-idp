@@ -2,8 +2,8 @@ package localstorage
 
 import (
 	"context"
-	"github.com/zhashkevych/go-clean-architecture/auth"
-	"github.com/zhashkevych/go-clean-architecture/models"
+	"rehatcher/openidp/server/auth"
+	"rehatcher/openidp/server/models"
 	"sync"
 )
 

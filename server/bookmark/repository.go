@@ -2,7 +2,7 @@ package bookmark
 
 import (
 	"context"
-	"github.com/zhashkevych/go-clean-architecture/models"
+	"rehatcher/openidp/server/models"
 )
 
 type Repository interface {

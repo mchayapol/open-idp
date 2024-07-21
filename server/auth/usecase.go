@@ -2,7 +2,7 @@ package auth
 
 import (
 	"context"
-	"github.com/zhashkevych/go-clean-architecture/models"
+	"rehatcher/openidp/serverarchitecture/models"
 )
 
 const CtxUserKey = "user"

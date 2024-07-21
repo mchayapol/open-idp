@@ -2,8 +2,8 @@ package usecase
 
 import (
 	"context"
-	"github.com/zhashkevych/go-clean-architecture/bookmark"
-	"github.com/zhashkevych/go-clean-architecture/models"
+	"rehatcher/openidp/server/bookmark"
+	"rehatcher/openidp/server/models"
 )
 
 type BookmarkUseCase struct {
